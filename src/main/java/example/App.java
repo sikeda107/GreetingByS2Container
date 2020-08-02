@@ -8,5 +8,6 @@ import example.di.main.GreetingMain;
 public class App {
     public static void main(String[] args) {
         GreetingMain.runGreeting();
+        GreetingMain.runGreetingByS2Container();
     }
 }
