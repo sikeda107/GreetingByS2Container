@@ -30,6 +30,10 @@ repositories {
 dependencies {
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:29.0-jre'
+
+    // https://mvnrepository.com/artifact/log4j/log4j
+    implementation group: 'log4j', name: 'log4j', version: '1.2.17'
+
     // https://mvnrepository.com/artifact/org.seasar.sastruts/sa-struts
     implementation group: 'org.seasar.sastruts', name: 'sa-struts', version: '1.0.4'
 
