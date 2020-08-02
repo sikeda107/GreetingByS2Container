@@ -8,6 +8,9 @@ import example.di.impl.GreetingImpl;
 import example.di.impl.GreetingClientImpl;
 
 public class GreetingMain {
+
+    private GreetingMain() {}
+
     public static void runGreeting() {
         Greeting greeting = new GreetingImpl();
         GreetingClient greetingClient = new GreetingClientImpl();

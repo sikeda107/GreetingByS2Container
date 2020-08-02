@@ -3,12 +3,10 @@
  */
 package example;
 
-public class App {
-    public String getGreeting() {
-        return "Hello world.";
-    }
+import example.di.main.GreetingMain;
 
+public class App {
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        GreetingMain.runGreeting();
     }
 }
