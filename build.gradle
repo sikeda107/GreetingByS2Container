@@ -18,11 +18,17 @@ repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
+    // Seasar プロジェクトの追加 http://maven.seasar.org/maven2/
+    maven {
+        url "http://maven.seasar.org/maven2"
+    }
 }
 
 dependencies {
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:29.0-jre'
+    // https://mvnrepository.com/artifact/org.seasar.sastruts/sa-struts
+    implementation group: 'org.seasar.sastruts', name: 'sa-struts', version: '1.0.4'
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.13'
