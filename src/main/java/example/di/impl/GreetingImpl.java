@@ -1,4 +1,10 @@
 package example.di.impl;
 
-public class GreetingImpl {
+import example.di.Greeting;
+
+public class GreetingImpl implements Greeting {
+    @Override
+    public String greet() {
+        return "Hello World!";
+    }
 }
