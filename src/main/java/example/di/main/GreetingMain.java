@@ -11,7 +11,8 @@ import org.seasar.framework.container.factory.S2ContainerFactory;
 
 public class GreetingMain {
 
-    private static final String PATH = "dicon/GreetingMain2.dicon";
+    private static final String PATH2 = "dicon/GreetingMain2.dicon";
+    private static final String PATH = "dicon/GreetingMain3.dicon";
 
     private GreetingMain() {}
 
