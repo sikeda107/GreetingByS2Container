@@ -12,17 +12,30 @@ plugins {
 
     // Apply the application plugin to add support for building a CLI application.
     id 'application'
+
+    // To use the IDEA plugin https://docs.gradle.org/current/userguide/idea_plugin.html#sec:idea_usage
+    id 'idea'
 }
 
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
+    // Seasar プロジェクトの追加 http://maven.seasar.org/maven2/
+    maven {
+        url "http://maven.seasar.org/maven2"
+    }
 }
 
 dependencies {
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:29.0-jre'
+
+    // https://mvnrepository.com/artifact/log4j/log4j
+    implementation group: 'log4j', name: 'log4j', version: '1.2.17'
+
+    // https://mvnrepository.com/artifact/org.seasar.sastruts/sa-struts
+    implementation group: 'org.seasar.sastruts', name: 'sa-struts', version: '1.0.4'
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.13'
