@@ -9,5 +9,6 @@ public class App {
     public static void main(String[] args) {
         GreetingMain.runGreeting();
         GreetingMain.runGreetingByS2Container();
+        GreetingMain.runGreetingByS2Container2();
     }
 }
